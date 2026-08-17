@@ -4,6 +4,31 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Mais de 400 conteúdos prontos para divulgar sua assistência técnica de informática.">
 <title>Pacote 2026 para Informática</title>
+<!-- UTMify: preserva os parâmetros UTM durante a navegação -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  data-utmify-fast-start
+  async
+  defer
+></script>
+
+<!-- Kirvano: envia os parâmetros da URL para os links de checkout -->
+<script>
+    window.onload = (event) => {
+        const links = document.querySelectorAll("a");
+        links.forEach(function (link) {
+            const href = link.href;
+            if (href !== null || href !== "") {
+                if (href.includes("kirvano")) {
+                    let search_params = document.location.search.replace("?", "");
+                    let urlFinal = href + (href.indexOf("?") > 0 ? "&" : "?") + search_params.toString();
+                    link.href = urlFinal;
+                }
+            }
+        });
+    };
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
